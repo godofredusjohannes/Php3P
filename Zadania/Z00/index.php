@@ -10,7 +10,6 @@
 <body>
     <?php
     echo "<h1>Witaj Świecie!</h1>";
-    phpinfo();
     ?>
 </body>
 </html>
