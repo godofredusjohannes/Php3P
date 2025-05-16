@@ -10,6 +10,16 @@ function wbz1($x)
     }
 }
 
-echo wbz1(-1)."<br>";
+function wbz2($x){
+    $wynik = ($x > 0) ? $x : $x * -1;
+    return $wynik;
+}
 
-echo wbz1(34);
+
+echo wbz1(-1)."\n";
+
+echo wbz1(34)."\n";
+
+echo wbz2(-1)."\n";
+
+echo wbz2(34);
