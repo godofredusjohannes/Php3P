@@ -1,0 +1,18 @@
+.szachownica {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50px);
+    width: fit-content;
+}
+
+.pole {
+    width: 50px;
+    height: 50px;
+}
+
+.zolty {
+    background-color: yellow;
+}
+
+.niebieski {
+    background-color: blue;
+}
