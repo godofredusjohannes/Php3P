@@ -1,7 +1,4 @@
 <?php
-//Składowe klasy - właściwości i metody 6.88 /244
-//--------------------------------------------
-
 class osoba
 {
     public $id, $nazwisko, $imie, $wiek;
