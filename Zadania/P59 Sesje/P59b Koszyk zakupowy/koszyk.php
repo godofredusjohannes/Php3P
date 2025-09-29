@@ -9,6 +9,7 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section>
 <p><b>Zawartość koszyka</b></p>
 <?php
 if (isset($_SESSION['koszyk'])) {
@@ -19,6 +20,9 @@ if (isset($_SESSION['koszyk'])) {
     echo "brak sesji";
 }
 ?>
+</section>
+<section>
 <p><a href="lista.php">Przejdź do listy produktów</a></p>
+</section>
 </body>
 </html>

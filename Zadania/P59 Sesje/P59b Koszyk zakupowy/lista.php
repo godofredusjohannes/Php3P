@@ -9,6 +9,11 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>Zadanie P59a</h1><br>
+    <h2>Autor: Seweryn Poczynek</h2>
+</header>
+<section>
 <p><b>Lista artykułów</b></p>
 <?php
 if(isset($_POST['lista'])){
@@ -45,6 +50,9 @@ if(isset($_POST['lista'])){
     <p>Wybierz produkty, trzymając wciśnięty klawisz Ctrl.</p>
     <p><input type="submit" value="Wyślij"></p>
 </form>
+</section>
+<section>
 <p><a href="koszyk.php">Przejdź do koszyka</a></p>
+</section>
 </body>
 </html>
