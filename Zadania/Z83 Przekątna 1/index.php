@@ -11,7 +11,14 @@
     <h1>Zadanie Z83</h1>
     <h2>Autor: Seweryn Poczynek</h2>
 <p>
-    Napisz program, który dla podanej liczby całkowitej A oznaczającej ilość znaków w wierszu wyświetla następujący blok znaków.
+    Napisz program, który dla podanej liczby całkowitej A oznaczającej ilość znaków w wierszu wyświetla następujący blok znaków.<br><br>
+    Przykład:<br>
+    A=5<br>
+    <b>1</b>0000<br>
+    0<b>1</b>000<br>
+    00<b>1</b>00<br>
+    000<b>1</b>0<br>
+    0000<b>1</b><br>
 </p>
 </header>
 <section>
