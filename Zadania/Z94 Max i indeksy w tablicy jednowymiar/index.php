@@ -36,33 +36,40 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        $input = htmlspecialchars($_POST['a']);
+        $input = $_POST['a'];
         $a = explode(",", $input);
 
-        // Usuwamy spacje:
         $a = array_map('trim', $a);
 
-        echo "Wprowadzone wartości: ";
-        $wielkosc_tab = count($a);
+        $numbers = [];
+        foreach ($a as $value) {
+            if ($value === "") continue;
 
-        for ($i = 0; $i < $wielkosc_tab; $i++) {
-            if ($i != $wielkosc_tab - 1) {
-                echo $a[$i] . ", ";
-            } else {
-                echo $a[$i];
+            if (!is_numeric($value) || intval($value) != $value) {
+                echo "Błąd: '$value' nie jest liczbą całkowitą!";
+                exit;
+            }
+            $numbers[] = intval($value);
+        }
+
+        $count = count($numbers);
+
+        echo "Tablica: ";
+        echo implode(", ", $numbers);
+
+        echo "<br>Liczba elementów: $count";
+
+        $max = max($numbers);
+        echo "<br>Maksymalna wartość: $max";
+
+        $indexes = [];
+        foreach ($numbers as $i => $val) {
+            if ($val == $max) {
+                $indexes[] = $i;
             }
         }
 
-        echo "<br> Tablica jednowymiarowa ($wielkosc_tab) elementów: <br>";
-        for ($i = 0; $i < $wielkosc_tab; $i++) {
-            if ($i != $wielkosc_tab - 1) {
-                echo $a[$i] . ", ";
-            } else {
-                echo $a[$i];
-            }
-        }
-        echo "<br>Liczba elementów: $wielkosc_tab";
-        echo "<br>Maksymalna wartość: ".max($a);
+        echo "<br>Indeksy elementów maksymalnych: " . implode(", ", $indexes);
     }
     ?>
 </section>
