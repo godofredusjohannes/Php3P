@@ -1,0 +1,51 @@
+body{
+    font-family: Verdana;
+}
+#motor{
+    display:block;
+    margin-left: 15%;
+    width: 70%;
+    position: absolute;
+    z-index: -1;
+ }
+#baner{
+    background-color: rgba(60,120,160,0.9);
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+}
+#lewy{
+    background-color: rgba(0,100,0,0.6);
+    margin: 2px;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow: auto;
+    box-shadow: dimgray 10px 10px 7px;
+}
+
+#prawy1, #prawy2{
+    background-color: rgba(0,100,0,0.6);
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+    box-shadow: dimgray 10px 10px 7px;
+}
+#stopka{
+    background-color: rgba(60,120,160,0.9);
+    color: white;
+    margin: 10px;
+}
+h1, h2{
+    text-align: center;
+    font-style: italic;
+}
+#lewy > ul > a{
+    color: white;
+}
+#lewy > ul > li{
+    padding: 1%;
+}
+#lewy > ul > li:hover{
+    background-color: lightgreen;
+}
