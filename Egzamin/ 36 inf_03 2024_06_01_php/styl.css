@@ -16,12 +16,13 @@ body{
 }
 #lewy{
     background-color: rgba(0,100,0,0.6);
-    margin: 2px;
+    margin: 2%;
     width: 75%;
     height: 600px;
     font-size: 120%;
     overflow: auto;
     box-shadow: dimgray 10px 10px 7px;
+    float:left;
 }
 
 #prawy1, #prawy2{
@@ -30,22 +31,36 @@ body{
     width: 15%;
     height: 300px;
     box-shadow: dimgray 10px 10px 7px;
+    float:left;
 }
 #stopka{
     background-color: rgba(60,120,160,0.9);
     color: white;
     margin: 10px;
+    width: 97%;
+    padding: 1%;
+    float:left;
+    clear:both;
 }
 h1, h2{
     text-align: center;
     font-style: italic;
 }
-#lewy > ul > a{
+#lewy > ul > li > a{
     color: white;
 }
 #lewy > ul > li{
+    list-style: none;
+}
+
+#lewy > ul > li > #element{
     padding: 1%;
 }
-#lewy > ul > li:hover{
+
+#lewy > ul > li > #element:hover{
     background-color: lightgreen;
+}
+
+#bialy{
+    color: white;
 }

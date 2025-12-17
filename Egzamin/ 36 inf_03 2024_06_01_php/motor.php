@@ -1,3 +1,8 @@
+<?php
+
+$db = mysqli_connect("localhost", "root", "", "motory");
+
+?>
 <!doctype html>
 <html lang="pl">
 <head>
@@ -15,6 +20,21 @@
 </header>
 <section id="lewy">
     <h2>Gdzie pojechać?</h2>
+    <?php
+    $sql = "SELECT `nazwa`,`opis`,`poczatek`,`zrodlo` FROM wycieczki INNER JOIN zdjecia ON zdjecia.id = wycieczki.zdjecia_id";
+
+    $zapytanie2 = mysqli_query($db, $sql);
+
+    echo "<ul>";
+
+    while ($el = mysqli_fetch_row($zapytanie2)) {
+        $zrodlo = "img/".$el[3].".jpg";
+        echo "<li><p id='bialy'>".$el[0].", rozpoczyna się w ".$el[3]." <a href='$zrodlo'>zobacz zdjęcie</a></p>"."<br><p id='element'>".$el[1]."</p></li>";
+    }
+
+    echo "</ul>";
+
+    ?>
 </section>
 <section id="prawy1">
     <h2>Co kupić?</h2>
@@ -37,10 +57,7 @@
 </footer>
 </body>
 </html>
-<?php
-
-?>
 
 <?php
-
+mysqli_close($db);
 ?>
