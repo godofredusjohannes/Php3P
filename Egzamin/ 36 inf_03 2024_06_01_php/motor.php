@@ -29,7 +29,7 @@ $db = mysqli_connect("localhost", "root", "", "motory");
 
     while ($el = mysqli_fetch_row($zapytanie2)) {
         $zrodlo = "img/".$el[3].".jpg";
-        echo "<li><p id='bialy'>".$el[0].", rozpoczyna się w ".$el[3]." <a href='$zrodlo'>zobacz zdjęcie</a></p>"."<br><p id='element'>".$el[1]."</p></li>";
+        echo "<li><p id='bialy'>".$el[0].", rozpoczyna się w ".$el[3]." <a href='$zrodlo'>zobacz zdjęcie</a></p>"."<p id='element'>".$el[1]."</p></li>";
     }
 
     echo "</ul>";
@@ -48,7 +48,16 @@ $db = mysqli_connect("localhost", "root", "", "motory");
 </section>
 <section id="prawy2">
     <h2>Statystyki</h2>
-    <p>Wpisanych wycieczek:</p>
+    <p>Wpisanych wycieczek:
+        <?php
+        $sql2 = "SELECT COUNT(*) AS iloscWycieczek FROM wycieczki;";
+
+        $zapytanie3 = mysqli_query($db, $sql2);
+        $wynik = mysqli_fetch_row($zapytanie3);
+        echo $wynik[0];
+        mysqli_close($db);
+        ?>
+    </p>
     <p>Użytkowników forum: 200</p>
     <p>Przesłanych zdjęć: 1300</p>
 </section>
@@ -57,7 +66,3 @@ $db = mysqli_connect("localhost", "root", "", "motory");
 </footer>
 </body>
 </html>
-
-<?php
-mysqli_close($db);
-?>
