@@ -10,4 +10,5 @@ while ($el = mysqli_fetch_row($kwerenda)) {
     echo "Nazwa: ".$el[0].", Cecha: ".$el[1]."<br>";
 }
 
+mysqli_close($db);
 ?>
