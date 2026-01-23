@@ -1,0 +1,4 @@
+kw1 - SELECT kod, nazwa, cena FROM kursy ORDER BY cena ASC;
+kw2 - SELECT nazwa FROM kursy;
+kw3 - INSERT INTO uczestnicy (`imie`,`nazwisko`,`wiek`) VALUES ("Tadeusz", "Wysocki", 36);
+kw4 - SELECT COUNT(kod_kursu) AS 'Zapisanych', nazwa FROM kursy JOIN kursy_uczestnicy ON kursy.kod = kursy_uczestnicy.kod_kursu GROUP BY nazwa;
