@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+}
+#glowny{
+    display: flex;
+}
+
+#boczny{
+    background-color: #C5CAE9;
+    width: 40%;
+    height: 600px;
+    overflow: auto;
+}
+
+#sekcja1, #sekcja2{
+    width: 60%;
+    height: 300px;
+}
+
+#sekcja1{
+    background-color: #9FA8DA;
+}
+
+#sekcja2{
+    background-color: #7986CB;
+}
+
+#stopka{
+    background-color: #283593;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.opona{
+    background-color: #9FA8DA;
+    margin: 40px;
+    border: dotted 2px #283593;
+    border-radius: 30px;
+}
+
+img {
+    text-align: right;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+}
+
+h3 {
+    background-color: #7986CB;
+    color: white;
+    font-size: 140%;
+}
