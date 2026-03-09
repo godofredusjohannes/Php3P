@@ -23,14 +23,14 @@
 
         while ($el = mysqli_fetch_row($query)) {
 
-            if ($el[3] = "letnia"){
-                echo "<div class='opona'><img src='img/lato.png' alt=''><h4>Opona: </h4>".$el[1]." ".$el[2]."<br><h3>Cena: </h3>".$el[4]."</div>";
+            if ($el[3] == "letnia"){
+                echo "<div class='opona'><img src='img/lato.png' alt=''><h4>Opona: </h4>".$el[1]." ".$el[2]."<br><h3>Cena: ".$el[4]."</h3></div>";
             }
-            if ($el[3] = "zimowa"){
-                echo "<div class='opona'><img src='img/zima.png' alt=''><h4>Opona: </h4>".$el[1]." ".$el[2]."<br><h3>Cena: </h3>".$el[4]."</div>";
+            if ($el[3] == "zimowa"){
+                echo "<div class='opona'><img src='img/zima.png' alt=''><h4>Opona: </h4>".$el[1]." ".$el[2]."<br><h3>Cena: ".$el[4]."</h3></div>";
             }
             else{
-                echo "<div class='opona'><img src='img/uniwer.png' alt=''><h4>Opona: </h4>".$el[1]." ".$el[2]."<br><h3>Cena: </h3>".$el[4]."</div>";
+                echo "<div class='opona'><img src='img/uniwer.png' alt=''><h4>Opona: </h4>".$el[1]." ".$el[2]."<br><h3>Cena: ".$el[4]."</h3></div>";
             }
 
 
@@ -39,6 +39,8 @@
         ?>
         <p><a href="https://opona.pl/">więcej ofert</a></p>
     </section>
+
+    <section id="prawy">
 
     <section id="sekcja1">
         <img src="img/opona.png" alt="Opona">
@@ -79,11 +81,14 @@
 
     </section>
 
-    <section id="stopka">
-        <p>Stronę wykonał: Seweryn Poczynek 3P</p>
     </section>
 
+
 </section>
+
+<footer>
+    <p>Stronę wykonał: Seweryn Poczynek 3P</p>
+</footer>
 
 </body>
 </html>
