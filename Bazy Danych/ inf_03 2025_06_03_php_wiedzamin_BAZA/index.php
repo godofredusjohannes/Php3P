@@ -8,10 +8,10 @@
     <title>Wiedzamin</title>
 </head>
 <body>
-<table>
-    <th>Autor</th>
-    <th>Tytuł</th>
-    <th>Kod</th>
+<table style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Autor</th>
+    <th style="border: 1px solid black;">Tytuł</th>
+    <th style="border: 1px solid black;">Kod</th>
 <?php
 
 $db = mysqli_connect("localhost", "root", "", "biblioteka");
@@ -22,7 +22,7 @@ $query = mysqli_query($db, $sql);
 
 while ($el = mysqli_fetch_row($query)){
 
-    echo "<tr><td>".$el[0]."</td><td>".$el[1]."</td><td>".$el[2]."</td></tr>";
+    echo "<tr><td style='border: 1px solid black;''>".$el[0]."</td><td style='border: 1px solid black;''>".$el[1]."</td><td style='border: 1px solid black;''>".$el[2]."</td></tr>";
 
 }
 
