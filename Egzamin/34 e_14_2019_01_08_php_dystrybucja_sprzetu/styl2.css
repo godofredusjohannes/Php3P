@@ -1,0 +1,40 @@
+body{
+    font-family: Helvetica;
+}
+#lista, #logo{
+    background-color: #6FACE3;
+    color: blue;
+    height: 300px;
+    width: 30%;
+    float: left;
+}
+#formularz{
+    background-color: #6FACE3;
+    color: blue;
+    height: 300px;
+    width: 40%;
+    float: left;
+}
+#glowny{
+    background-color: #4C93D2;
+    height: 350px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    float: left;
+}
+footer{
+    background-color: #2D77BA;
+    color: white;
+    height: 170px;
+    padding: 15px;
+    clear: both;
+}
+a{
+    background-color: LightSkyBlue;
+    margin: 5px;
+    padding: 10px;
+}
+a:visited{
+    background-color: LightSteelBlue;
+}

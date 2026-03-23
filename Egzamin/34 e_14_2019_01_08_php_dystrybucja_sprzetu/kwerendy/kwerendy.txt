@@ -1,0 +1,4 @@
+kw1 - SELECT podzespoly.nazwa, dostepnosc, cena FROM podzespoly JOIN producenci ON podzespoly.producenci_id = producenci.id WHERE producenci.nazwa = 'ADATA';
+kw2 - SELECT podzespoly.id, podzespoly.opis FROM podzespoly JOIN producenci ON podzespoly.producenci_id = producenci.id WHERE podzespoly.dostepnosc = 0 AND producenci.nazwa = "Intel" OR producenci.nazwa = "AMD";
+kw3 - SELECT podzespoly.opis, podzespoly.cena, producenci.nazwa FROM podzespoly JOIN producenci ON podzespoly.producenci_id = producenci.id;
+kw4 - ALTER TABLE producenci ADD COLUMN `priorytet`int;
