@@ -31,8 +31,8 @@
     <section id="formularz">
         <h1>Dystrybucja sprzętu komputerowego</h1>
         <form method="post">
-            <label for="producent">Wybierz producenta</label>
-            <input type="number" name="producent" min="0" max="9">
+            <label for="producent">Wybierz producenta</label><br>
+            <input type="number" name="producent" >
             <button type="submit">WYŚWIETL</button>
         </form>
     </section>
